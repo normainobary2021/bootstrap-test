@@ -137,7 +137,7 @@
             </div>
         </section>
 
-        <section class="container ">
+        <section class="container">
             <div class="row">
                 <div class="col-6">
                     <h1 class="display-4 fw-bold pt-5">About<br>Myself</h1>
@@ -169,16 +169,26 @@
             </div>
         </section>
     </main>
-    <footer>
-        <form class="" action="https://formspree.io/f/xoqrojoe" method="post">
-            <h2>Contact me</h2>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
-            <ul class="">
-                <li class=""><input type="text" name="name" placeholder="Enter your name" required maxlength="30"></li>
-                <li class=""><input type="email" name="email" placeholder="Enter your email" required></li>
-                <li class=""><textarea maxlength="500" name="message" placeholder="Write your message here" required></textarea></li>
-                <li class=""><button type="submit">Get In Touch</button></li>
-            </ul>
+    <footer class="container-fluid d-flex flex-column">
+
+        <form class="row h-100 justify-content-center align-items-center" action="https://formspree.io/f/xoqrojoe" method="post">
+            <div class="col-4">
+                <h2 class="text-center">Contact me</h2>
+                <p class="text-center">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
+                <div class="mb-3">
+                    <label for="name" class="form-label d-none">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label d-none">Email address</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label d-none"></label>
+                    <textarea name="message" class="form-control" id="message" rows="5" placeholder="Enter message" maxlength="500"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Get In Touch</button>
+            </div>
         </form>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
